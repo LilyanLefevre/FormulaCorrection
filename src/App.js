@@ -295,8 +295,6 @@ const MolecularMatcher = () => {
     };
 
     return (<div className="container mx-auto p-4">
-            <h1 className="text-xl font-bold mb-4">Formula Correction</h1>
-
             {error && (<div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
                     <div className="bg-white rounded-lg p-6 max-w-md w-full mx-4 shadow-xl">
                         <div className="flex items-start">
@@ -328,7 +326,7 @@ const MolecularMatcher = () => {
 
             <div className="mb-6">
                 <p className="text-sm text-gray-600 mb-2">
-                    <strong>File Input Guidelines:</strong> For the Formula CSV, use a semicolon-separated file with columns 'ID' and 'formulas'. Formulas should be in the format {'C{10}H{20}N{2}O{5}S{1}P{1}Cl{0}'}, where the numbers in curly braces represent the count of each atom type. The Corrections TXT file should contain one formula correction per line, using the same format.
+                    <strong>File Input Guidelines:</strong> For the Formula CSV, use a semicolon-separated file with columns 'ID' and 'formulas'. Formulas should follow the format of this example C10H20N20S-2P1Cl0. The Corrections TXT file should contain one formula correction per line, using the same format.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <div>
